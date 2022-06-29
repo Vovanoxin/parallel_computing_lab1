@@ -1,0 +1,18 @@
+[package]
+name = "parallel_computing_lab1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "3.1.0", features = ["derive"] }
+rand = "0.8.5"
+crossbeam = "0.8.1"
+itertools = "0.10.3"
+
+[[bin]]
+name = "sequential"
+path = "src/sequential.rs"
+
+[[bin]]
+name = "parallel"
+path = "src/parallel.rs"
